@@ -1,0 +1,1231 @@
+2014/08/06 06:30:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "page".' in K:\home\library.local\yii\framework\web\CController.php:483
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CController.php(270): CController->missingAction('page')
+#1 K:\home\library.local\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#2 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#3 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 K:\home\library.local\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/page&view=about
+HTTP_REFERER=http://www.library.local/index.php?r=site/contact
+---
+2014/08/06 06:32:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in K:\home\library.local\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 K:\home\library.local\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=gii
+---
+2014/08/06 06:33:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'testdrive'' in K:\home\library.local\yii\framework\db\CDbConnection.php:399
+Stack trace:
+#0 K:\home\library.local\yii\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 K:\home\library.local\yii\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 K:\home\library.local\yii\framework\base\CModule.php(393): CDbConnection->init()
+#3 K:\home\library.local\yii\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 K:\home\library.local\yii\framework\gii\generators\crud\CrudCode.php(44): CModule->__get('db')
+#5 K:\home\library.local\yii\framework\web\CFormModel.php(39): CrudCode->init()
+#6 K:\home\library.local\yii\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 K:\home\library.local\yii\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 K:\home\library.local\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 K:\home\library.local\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 K:\home\library.local\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#13 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/crud/index')
+#14 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 K:\home\library.local\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=gii/crud/index
+HTTP_REFERER=http://www.library.local/index.php?r=gii/default/index
+---
+2014/08/06 06:36:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "books".' in K:\home\library.local\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books')
+#1 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 K:\home\library.local\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=books
+HTTP_REFERER=http://www.library.local/index.php?r=
+---
+2014/08/06 06:36:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "books".' in K:\home\library.local\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books')
+#1 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 K:\home\library.local\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=books
+HTTP_REFERER=http://www.library.local/index.php?r=authors
+---
+2014/08/06 06:39:25 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "login".' in K:\home\library.local\yii\framework\web\CController.php:878
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 K:\home\library.local\www\protected\controllers\SiteController.php(67): CController->render('login', Array)
+#2 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#3 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 K:\home\library.local\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 K:\home\library.local\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 K:\home\library.local\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#7 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#8 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 K:\home\library.local\www\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://www.library.local/index.php?r=books/view&id=1
+---
+2014/08/06 07:38:23 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (64)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 07:39:15 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (64)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 07:48:07 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (64)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 07:51:15 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (64)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 07:51:31 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (64)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 07:55:32 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (64)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 07:56:21 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (64)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 07:56:53 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (64)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 07:57:41 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (64)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 08:02:18 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (99)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 08:02:30 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (99)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 08:03:17 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (99)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 08:03:28 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (99)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 08:05:34 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (99)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 08:14:13 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (99)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 08:14:35 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (99)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 08:15:17 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (99)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 08:15:55 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (99)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 08:16:00 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (99)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 08:16:59 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (99)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 08:17:31 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (99)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 08:17:40 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (99)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 08:18:33 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (100)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 08:50:53 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (100)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 08:58:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in K:\home\library.local\yii\framework\web\CController.php:483
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CController.php(270): CController->missingAction('login')
+#1 K:\home\library.local\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#2 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 K:\home\library.local\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/login
+HTTP_REFERER=http://www.library.local/index.php?r=readers
+---
+2014/08/06 09:12:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "пшш".' in K:\home\library.local\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('??????')
+#1 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 K:\home\library.local\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=%D0%BF%D1%88%D1%88
+---
+2014/08/06 11:34:33 [error] [exception.CException] exception 'CException' with message 'ReportController cannot find the requested view "reportBook".' in K:\home\library.local\yii\framework\web\CController.php:878
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CController.php(782): CController->renderPartial('reportBook', Array, true)
+#1 K:\home\library.local\www\protected\controllers\ReportController.php(40): CController->render('reportBook', Array)
+#2 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionReportBook()
+#3 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 K:\home\library.local\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 K:\home\library.local\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 K:\home\library.local\yii\framework\web\CWebApplication.php(282): CController->run('reportBook')
+#7 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('report/reportBo...')
+#8 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 K:\home\library.local\www\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=report/reportBook
+---
+2014/08/06 11:36:54 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'authorsAll.author_id' in 'having clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`name` AS `t0_c1` FROM `books` `t`  GROUP BY t.id HAVING (COUNT(authorsAll.author_id) > 2) LIMIT 10.
+in K:\home\library.local\www\protected\views\report\report_book.php (20)
+in K:\home\library.local\www\protected\controllers\ReportController.php (43)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 11:36:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'authorsAll.author_id' in 'having clause'. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`name` AS `t0_c1` FROM `books` `t`  GROUP BY t.id HAVING (COUNT(authorsAll.author_id) > 2) LIMIT 10' in K:\home\library.local\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 K:\home\library.local\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 K:\home\library.local\yii\framework\db\ar\CActiveFinder.php(808): CDbCommand->queryAll()
+#2 K:\home\library.local\yii\framework\db\ar\CActiveFinder.php(440): CJoinElement->runQuery(Object(CJoinQuery))
+#3 K:\home\library.local\yii\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 K:\home\library.local\yii\framework\db\ar\CActiveRecord.php(1359): CActiveFinder->query(Object(CDbCriteria), true)
+#5 K:\home\library.local\yii\framework\db\ar\CActiveRecord.php(1473): CActiveRecord->query(Object(CDbCriteria), true)
+#6 K:\home\library.local\yii\framework\web\CActiveDataProvider.php(199): CActiveRecord->findAll(Object(CDbCriteria))
+#7 K:\home\library.local\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#8 K:\home\library.local\yii\framework\zii\widgets\CBaseListView.php(125): CDataProvider->getData()
+#9 K:\home\library.local\yii\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#10 K:\home\library.local\yii\framework\web\CBaseController.php(147): CListView->init()
+#11 K:\home\library.local\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#12 K:\home\library.local\www\protected\views\report\report_book.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#13 K:\home\library.local\yii\framework\web\CBaseController.php(126): require('K:\home\library...')
+#14 K:\home\library.local\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('K:\home\library...', Array, true)
+#15 K:\home\library.local\yii\framework\web\CController.php(869): CBaseController->renderFile('K:\home\library...', Array, true)
+#16 K:\home\library.local\yii\framework\web\CController.php(782): CController->renderPartial('report_book', Array, true)
+#17 K:\home\library.local\www\protected\controllers\ReportController.php(43): CController->render('report_book', Array)
+#18 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionReportBook()
+#19 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 K:\home\library.local\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 K:\home\library.local\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 K:\home\library.local\yii\framework\web\CWebApplication.php(282): CController->run('reportBook')
+#23 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('report/reportBo...')
+#24 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#25 K:\home\library.local\www\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php?r=report/reportBook
+---
+2014/08/06 11:43:12 [error] [exception.CDbException] exception 'CDbException' with message 'Active record "Books" is trying to select an invalid column "t.name1". Note, the column must exist in the table or be an expression with alias.' in K:\home\library.local\yii\framework\db\ar\CActiveFinder.php:965
+Stack trace:
+#0 K:\home\library.local\yii\framework\db\ar\CActiveFinder.php(1283): CJoinElement->getColumnSelect('t.id, t.name1')
+#1 K:\home\library.local\yii\framework\db\ar\CActiveFinder.php(729): CJoinQuery->__construct(Object(CJoinElement), Object(CDbCriteria))
+#2 K:\home\library.local\yii\framework\db\ar\CActiveFinder.php(151): CJoinElement->count(Object(CDbCriteria))
+#3 K:\home\library.local\yii\framework\db\ar\CActiveRecord.php(1608): CActiveFinder->count(Object(CDbCriteria))
+#4 K:\home\library.local\yii\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#5 K:\home\library.local\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#6 K:\home\library.local\yii\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#7 K:\home\library.local\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#8 K:\home\library.local\yii\framework\zii\widgets\CBaseListView.php(125): CDataProvider->getData()
+#9 K:\home\library.local\yii\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#10 K:\home\library.local\yii\framework\web\CBaseController.php(147): CListView->init()
+#11 K:\home\library.local\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#12 K:\home\library.local\www\protected\views\report\report_book.php(16): CBaseController->widget('zii.widgets.CLi...', Array)
+#13 K:\home\library.local\yii\framework\web\CBaseController.php(126): require('K:\home\library...')
+#14 K:\home\library.local\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('K:\home\library...', Array, true)
+#15 K:\home\library.local\yii\framework\web\CController.php(869): CBaseController->renderFile('K:\home\library...', Array, true)
+#16 K:\home\library.local\yii\framework\web\CController.php(782): CController->renderPartial('report_book', Array, true)
+#17 K:\home\library.local\www\protected\controllers\ReportController.php(26): CController->render('report_book', Array)
+#18 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionReportBook()
+#19 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 K:\home\library.local\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 K:\home\library.local\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 K:\home\library.local\yii\framework\web\CWebApplication.php(282): CController->run('reportBook')
+#23 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('report/reportBo...')
+#24 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#25 K:\home\library.local\www\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php?r=report/reportBook
+---
+2014/08/06 11:43:26 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION library.COUNTa does not exist. The SQL statement executed was: SELECT COUNT(*) FROM (SELECT `t`.`id` AS `t0_c0`, `t`.`name` AS `t0_c1`, `booksReaderReport`.`id` AS `t1_c0`, `booksReaderReport`.`name` AS `t1_c1`, `booksReaderReport`.`update_time` AS `t1_c2`, `booksReaderReport`.`create_time` AS `t1_c3`, `authorsAll`.`book_id` AS `t2_c0`, `authorsAll`.`author_id` AS `t2_c1` FROM `books` `t`  RIGHT JOIN `book_reader` `booksReaderReport_booksReaderReport` ON (`t`.`id`=`booksReaderReport_booksReaderReport`.`book_id`) RIGHT JOIN `readers` `booksReaderReport` ON (`booksReaderReport`.`id`=`booksReaderReport_booksReaderReport`.`reader_id`) LEFT OUTER JOIN `book_author` `authorsAll` ON (`authorsAll`.`book_id`=`t`.`id`) GROUP BY t.id HAVING (COUNTa(authorsAll.author_id) > 2)) sq.
+in K:\home\library.local\www\protected\views\report\report_book.php (16)
+in K:\home\library.local\www\protected\controllers\ReportController.php (26)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 11:43:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION library.COUNTa does not exist. The SQL statement executed was: SELECT COUNT(*) FROM (SELECT `t`.`id` AS `t0_c0`, `t`.`name` AS `t0_c1`, `booksReaderReport`.`id` AS `t1_c0`, `booksReaderReport`.`name` AS `t1_c1`, `booksReaderReport`.`update_time` AS `t1_c2`, `booksReaderReport`.`create_time` AS `t1_c3`, `authorsAll`.`book_id` AS `t2_c0`, `authorsAll`.`author_id` AS `t2_c1` FROM `books` `t`  RIGHT JOIN `book_reader` `booksReaderReport_booksReaderReport` ON (`t`.`id`=`booksReaderReport_booksReaderReport`.`book_id`) RIGHT JOIN `readers` `booksReaderReport` ON (`booksReaderReport`.`id`=`booksReaderReport_booksReaderReport`.`reader_id`) LEFT OUTER JOIN `book_author` `authorsAll` ON (`authorsAll`.`book_id`=`t`.`id`) GROUP BY t.id HAVING (COUNTa(authorsAll.author_id) > 2)) sq' in K:\home\library.local\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 K:\home\library.local\yii\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 K:\home\library.local\yii\framework\db\ar\CActiveFinder.php(745): CDbCommand->queryScalar()
+#2 K:\home\library.local\yii\framework\db\ar\CActiveFinder.php(151): CJoinElement->count(Object(CDbCriteria))
+#3 K:\home\library.local\yii\framework\db\ar\CActiveRecord.php(1608): CActiveFinder->count(Object(CDbCriteria))
+#4 K:\home\library.local\yii\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#5 K:\home\library.local\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#6 K:\home\library.local\yii\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#7 K:\home\library.local\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#8 K:\home\library.local\yii\framework\zii\widgets\CBaseListView.php(125): CDataProvider->getData()
+#9 K:\home\library.local\yii\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#10 K:\home\library.local\yii\framework\web\CBaseController.php(147): CListView->init()
+#11 K:\home\library.local\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#12 K:\home\library.local\www\protected\views\report\report_book.php(16): CBaseController->widget('zii.widgets.CLi...', Array)
+#13 K:\home\library.local\yii\framework\web\CBaseController.php(126): require('K:\home\library...')
+#14 K:\home\library.local\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('K:\home\library...', Array, true)
+#15 K:\home\library.local\yii\framework\web\CController.php(869): CBaseController->renderFile('K:\home\library...', Array, true)
+#16 K:\home\library.local\yii\framework\web\CController.php(782): CController->renderPartial('report_book', Array, true)
+#17 K:\home\library.local\www\protected\controllers\ReportController.php(26): CController->render('report_book', Array)
+#18 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionReportBook()
+#19 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 K:\home\library.local\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 K:\home\library.local\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 K:\home\library.local\yii\framework\web\CWebApplication.php(282): CController->run('reportBook')
+#23 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('report/reportBo...')
+#24 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#25 K:\home\library.local\www\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php?r=report/reportBook
+---
+2014/08/06 12:07:07 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION library.COUNTa does not exist. The SQL statement executed was: SELECT COUNT(*) FROM (SELECT `t`.`id` AS `t0_c0`, `t`.`name` AS `t0_c1`, `booksAll`.`book_id` AS `t1_c0`, `booksAll`.`author_id` AS `t1_c1`, `booksReader`.`book_id` AS `t2_c0`, `booksReader`.`reader_id` AS `t2_c1` FROM `authors` `t`  LEFT OUTER JOIN `book_author` `booksAll` ON (`booksAll`.`author_id`=`t`.`id`) LEFT OUTER JOIN `book_reader` `booksReader` ON (`booksReader`.`book_id`=`booksAll`.`book_id`) GROUP BY t.id HAVING (COUNTa(booksReader.reader_id) > 3)) sq.
+in K:\home\library.local\www\protected\views\report\report_book.php (16)
+in K:\home\library.local\www\protected\controllers\ReportController.php (52)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 12:07:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1305 FUNCTION library.COUNTa does not exist. The SQL statement executed was: SELECT COUNT(*) FROM (SELECT `t`.`id` AS `t0_c0`, `t`.`name` AS `t0_c1`, `booksAll`.`book_id` AS `t1_c0`, `booksAll`.`author_id` AS `t1_c1`, `booksReader`.`book_id` AS `t2_c0`, `booksReader`.`reader_id` AS `t2_c1` FROM `authors` `t`  LEFT OUTER JOIN `book_author` `booksAll` ON (`booksAll`.`author_id`=`t`.`id`) LEFT OUTER JOIN `book_reader` `booksReader` ON (`booksReader`.`book_id`=`booksAll`.`book_id`) GROUP BY t.id HAVING (COUNTa(booksReader.reader_id) > 3)) sq' in K:\home\library.local\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 K:\home\library.local\yii\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 K:\home\library.local\yii\framework\db\ar\CActiveFinder.php(745): CDbCommand->queryScalar()
+#2 K:\home\library.local\yii\framework\db\ar\CActiveFinder.php(151): CJoinElement->count(Object(CDbCriteria))
+#3 K:\home\library.local\yii\framework\db\ar\CActiveRecord.php(1608): CActiveFinder->count(Object(CDbCriteria))
+#4 K:\home\library.local\yii\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#5 K:\home\library.local\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#6 K:\home\library.local\yii\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#7 K:\home\library.local\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#8 K:\home\library.local\yii\framework\zii\widgets\CBaseListView.php(125): CDataProvider->getData()
+#9 K:\home\library.local\yii\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#10 K:\home\library.local\yii\framework\web\CBaseController.php(147): CListView->init()
+#11 K:\home\library.local\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#12 K:\home\library.local\www\protected\views\report\report_book.php(16): CBaseController->widget('zii.widgets.CLi...', Array)
+#13 K:\home\library.local\yii\framework\web\CBaseController.php(126): require('K:\home\library...')
+#14 K:\home\library.local\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('K:\home\library...', Array, true)
+#15 K:\home\library.local\yii\framework\web\CController.php(869): CBaseController->renderFile('K:\home\library...', Array, true)
+#16 K:\home\library.local\yii\framework\web\CController.php(782): CController->renderPartial('report_book', Array, true)
+#17 K:\home\library.local\www\protected\controllers\ReportController.php(52): CController->render('report_book', Array)
+#18 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionReportAuthors()
+#19 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#20 K:\home\library.local\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#21 K:\home\library.local\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 K:\home\library.local\yii\framework\web\CWebApplication.php(282): CController->run('reportAuthors')
+#23 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('report/reportAu...')
+#24 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#25 K:\home\library.local\www\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php?r=report/reportAuthors
+HTTP_REFERER=http://www.library.local/index.php?r=report/reportAuthors
+---
+2014/08/06 12:09:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "reportBooks".' in K:\home\library.local\yii\framework\web\CController.php:483
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CController.php(270): CController->missingAction('reportBooks')
+#1 K:\home\library.local\yii\framework\web\CWebApplication.php(282): CController->run('reportBooks')
+#2 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('report/reportBo...')
+#3 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 K:\home\library.local\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=report/reportBooks
+HTTP_REFERER=http://www.library.local/index.php?r=report/reportAuthors
+---
+2014/08/06 12:16:28 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (64)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 12:16:56 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (100)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 12:17:17 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (100)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 13:06:52 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1327 Undeclared variable: Array. The SQL statement executed was: (SELECT * FROM books LIMIT Array, 1) UNION (SELECT * FROM books LIMIT Array, 1) UNION (SELECT * FROM books LIMIT Array, 1) UNION (SELECT * FROM books LIMIT Array, 1).
+in K:\home\library.local\www\protected\controllers\ReportController.php (82)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 13:06:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1327 Undeclared variable: Array. The SQL statement executed was: (SELECT * FROM books LIMIT Array, 1) UNION (SELECT * FROM books LIMIT Array, 1) UNION (SELECT * FROM books LIMIT Array, 1) UNION (SELECT * FROM books LIMIT Array, 1)' in K:\home\library.local\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 K:\home\library.local\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 K:\home\library.local\www\protected\controllers\ReportController.php(82): CDbCommand->queryAll()
+#2 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionReportRandBooks()
+#3 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 K:\home\library.local\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 K:\home\library.local\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 K:\home\library.local\yii\framework\web\CWebApplication.php(282): CController->run('reportRandBooks')
+#7 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('report/reportRa...')
+#8 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 K:\home\library.local\www\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/index.php?r=report/reportRandBooks
+HTTP_REFERER=http://www.library.local/index.php?r=report/reportBooks
+---
+2014/08/06 13:07:12 [error] [php] Undefined index: id (K:\home\library.local\www\protected\views\report\report_random_book.php:9)
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#1 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#2 K:\home\library.local\www\protected\controllers\ReportController.php(84): ReportController->render()
+#3 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionReportRandBooks()
+#4 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#6 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#7 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#8 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report/reportRandBooks
+in K:\home\library.local\www\protected\views\report\report_random_book.php (9)
+in K:\home\library.local\www\protected\controllers\ReportController.php (84)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 13:07:31 [error] [php] Undefined index: id (K:\home\library.local\www\protected\views\report\report_random_book.php:9)
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#1 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#2 K:\home\library.local\www\protected\controllers\ReportController.php(84): ReportController->render()
+#3 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionReportRandBooks()
+#4 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#6 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#7 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#8 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report/reportRandBooks
+in K:\home\library.local\www\protected\views\report\report_random_book.php (9)
+in K:\home\library.local\www\protected\controllers\ReportController.php (84)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 13:10:55 [warning] [application] Failed to set unsafe attribute "authorId" of "Books".
+in K:\home\library.local\www\protected\controllers\BooksController.php (64)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 13:28:16 [error] [php] Undefined index: name (K:\home\library.local\www\protected\views\report\report_random_book.php:14)
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#1 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#2 K:\home\library.local\www\protected\controllers\ReportController.php(84): ReportController->render()
+#3 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionReportRandBooks()
+#4 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#6 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#7 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#8 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report/reportRandBooks
+in K:\home\library.local\www\protected\views\report\report_random_book.php (14)
+in K:\home\library.local\www\protected\controllers\ReportController.php (84)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 13:28:30 [error] [php] Undefined index: name (K:\home\library.local\www\protected\views\report\report_random_book.php:14)
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#1 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#2 K:\home\library.local\www\protected\controllers\ReportController.php(84): ReportController->render()
+#3 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionReportRandBooks()
+#4 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#6 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#7 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#8 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report/reportRandBooks
+in K:\home\library.local\www\protected\views\report\report_random_book.php (14)
+in K:\home\library.local\www\protected\controllers\ReportController.php (84)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 13:28:33 [error] [php] Undefined index: name (K:\home\library.local\www\protected\views\report\report_random_book.php:14)
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#1 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#2 K:\home\library.local\www\protected\controllers\ReportController.php(84): ReportController->render()
+#3 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionReportRandBooks()
+#4 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#6 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#7 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#8 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report/reportRandBooks
+in K:\home\library.local\www\protected\views\report\report_random_book.php (14)
+in K:\home\library.local\www\protected\controllers\ReportController.php (84)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 16:07:36 [error] [php] Undefined index: authorsName (K:\home\library.local\www\protected\controllers\BooksController.php:65)
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\filters\CFilterChain.php(133): BooksController->runAction()
+#1 K:\home\library.local\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 K:\home\library.local\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 K:\home\library.local\yii\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#4 K:\home\library.local\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 K:\home\library.local\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 K:\home\library.local\yii\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#7 K:\home\library.local\yii\framework\web\CWebApplication.php(282): BooksController->run()
+#8 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=books/create
+in K:\home\library.local\www\protected\controllers\BooksController.php (65)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 16:08:03 [error] [php] Undefined index: authorsName (K:\home\library.local\www\protected\controllers\BooksController.php:65)
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\filters\CFilterChain.php(133): BooksController->runAction()
+#1 K:\home\library.local\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 K:\home\library.local\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 K:\home\library.local\yii\framework\web\filters\CInlineFilter.php(58): BooksController->filterAccessControl()
+#4 K:\home\library.local\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 K:\home\library.local\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 K:\home\library.local\yii\framework\web\CController.php(265): BooksController->runActionWithFilters()
+#7 K:\home\library.local\yii\framework\web\CWebApplication.php(282): BooksController->run()
+#8 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=books/create
+in K:\home\library.local\www\protected\controllers\BooksController.php (65)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 16:08:19 [error] [exception.CException] exception 'CException' with message 'Property "CAutoComplete.attributes" is not defined.' in K:\home\library.local\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('attributes', 'authorsName')
+#1 K:\home\library.local\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(BooksController), 'CAutoComplete', Array)
+#2 K:\home\library.local\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('CAutoComplete', Array)
+#3 K:\home\library.local\www\protected\views\books\_form.php(51): CBaseController->widget('CAutoComplete', Array)
+#4 K:\home\library.local\yii\framework\web\CBaseController.php(126): require('K:\home\library...')
+#5 K:\home\library.local\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('K:\home\library...', Array, true)
+#6 K:\home\library.local\yii\framework\web\CController.php(869): CBaseController->renderFile('K:\home\library...', Array, true)
+#7 K:\home\library.local\www\protected\views\books\create.php(18): CController->renderPartial('_form', Array)
+#8 K:\home\library.local\yii\framework\web\CBaseController.php(126): require('K:\home\library...')
+#9 K:\home\library.local\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('K:\home\library...', Array, true)
+#10 K:\home\library.local\yii\framework\web\CController.php(869): CBaseController->renderFile('K:\home\library...', Array, true)
+#11 K:\home\library.local\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#12 K:\home\library.local\www\protected\controllers\BooksController.php(83): CController->render('create', Array)
+#13 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): BooksController->actionCreate()
+#14 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 K:\home\library.local\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 K:\home\library.local\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 K:\home\library.local\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 K:\home\library.local\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 K:\home\library.local\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 K:\home\library.local\yii\framework\web\CController.php(291): CFilterChain->run()
+#21 K:\home\library.local\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 K:\home\library.local\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#23 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('books/create')
+#24 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#25 K:\home\library.local\www\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php?r=books/create
+---
+2014/08/06 16:13:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "search".' in K:\home\library.local\yii\framework\web\CController.php:483
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CController.php(270): CController->missingAction('search')
+#1 K:\home\library.local\yii\framework\web\CWebApplication.php(282): CController->run('search')
+#2 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('report/search')
+#3 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 K:\home\library.local\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=report/search
+HTTP_REFERER=http://www.library.local/index.php?r=report/reportBooks
+---
+2014/08/06 16:17:01 [error] [php] Undefined variable: model (K:\home\library.local\www\protected\views\report\_view_report_book.php:17)
+Stack trace:
+#0 K:\home\library.local\yii\framework\zii\widgets\CListView.php(291): ReportController->renderFile()
+#1 K:\home\library.local\yii\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 K:\home\library.local\yii\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#4 K:\home\library.local\yii\framework\zii\widgets\CBaseListView.php(149): CListView->renderContent()
+#5 K:\home\library.local\yii\framework\web\CBaseController.php(181): CListView->run()
+#6 K:\home\library.local\www\protected\views\report\report_book.php(15): ReportController->widget()
+#7 K:\home\library.local\yii\framework\web\CBaseController.php(126): require()
+#8 K:\home\library.local\yii\framework\web\CBaseController.php(95): ReportController->renderInternal()
+#9 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#10 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#11 K:\home\library.local\www\protected\controllers\ReportController.php(34): ReportController->render()
+#12 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionReportBooks()
+#13 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#15 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#16 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#17 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#19 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report/reportBooks
+in K:\home\library.local\www\protected\views\report\_view_report_book.php (17)
+in K:\home\library.local\www\protected\views\report\report_book.php (15)
+in K:\home\library.local\www\protected\controllers\ReportController.php (34)
+2014/08/06 16:31:15 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "booksAll" is not defined in active record class "SearchBooks".' in K:\home\library.local\yii\framework\db\ar\CActiveFinder.php:226
+Stack trace:
+#0 K:\home\library.local\yii\framework\db\ar\CActiveFinder.php(210): CActiveFinder->buildJoinTree(Object(CJoinElement), 'booksAll')
+#1 K:\home\library.local\yii\framework\db\ar\CActiveFinder.php(299): CActiveFinder->buildJoinTree(Object(CJoinElement), 'booksAll.booksR...')
+#2 K:\home\library.local\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#3 K:\home\library.local\yii\framework\db\ar\CActiveRecord.php(912): CActiveFinder->__construct(Object(SearchBooks), Array)
+#4 K:\home\library.local\yii\framework\db\ar\CActiveRecord.php(1607): CActiveRecord->getActiveFinder(Array)
+#5 K:\home\library.local\yii\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#6 K:\home\library.local\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#7 K:\home\library.local\yii\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#8 K:\home\library.local\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#9 K:\home\library.local\yii\framework\zii\widgets\CBaseListView.php(125): CDataProvider->getData()
+#10 K:\home\library.local\yii\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#11 K:\home\library.local\yii\framework\web\CBaseController.php(147): CListView->init()
+#12 K:\home\library.local\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#13 K:\home\library.local\www\protected\views\report\report_author.php(16): CBaseController->widget('zii.widgets.CLi...', Array)
+#14 K:\home\library.local\yii\framework\web\CBaseController.php(126): require('K:\home\library...')
+#15 K:\home\library.local\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('K:\home\library...', Array, true)
+#16 K:\home\library.local\yii\framework\web\CController.php(869): CBaseController->renderFile('K:\home\library...', Array, true)
+#17 K:\home\library.local\yii\framework\web\CController.php(782): CController->renderPartial('report_author', Array, true)
+#18 K:\home\library.local\www\protected\controllers\ReportController.php(101): CController->render('report_author', Array)
+#19 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#20 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 K:\home\library.local\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#22 K:\home\library.local\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 K:\home\library.local\yii\framework\web\CWebApplication.php(282): CController->run('search')
+#24 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('report/search')
+#25 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#26 K:\home\library.local\www\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/index.php?r=report/search
+HTTP_REFERER=http://www.library.local/index.php?r=report/reportAuthors
+---
+2014/08/06 16:45:55 [error] [php] Undefined index: search (K:\home\library.local\www\protected\models\SearchBooks.php:81)
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CBaseController.php(95): ReportController->renderInternal()
+#1 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#2 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#3 K:\home\library.local\www\protected\controllers\ReportController.php(96): ReportController->render()
+#4 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#5 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#7 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#8 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#9 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report/search
+in K:\home\library.local\www\protected\models\SearchBooks.php (81)
+in K:\home\library.local\www\protected\views\report\report_search.php (13)
+in K:\home\library.local\www\protected\controllers\ReportController.php (96)
+2014/08/06 16:47:10 [error] [php] Undefined index: search (K:\home\library.local\www\protected\models\SearchBooks.php:81)
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CBaseController.php(95): ReportController->renderInternal()
+#1 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#2 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#3 K:\home\library.local\www\protected\controllers\ReportController.php(96): ReportController->render()
+#4 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#5 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#7 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#8 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#9 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report/search
+in K:\home\library.local\www\protected\models\SearchBooks.php (81)
+in K:\home\library.local\www\protected\views\report\report_search.php (12)
+in K:\home\library.local\www\protected\controllers\ReportController.php (96)
+2014/08/06 16:47:19 [error] [php] Undefined index: search (K:\home\library.local\www\protected\models\SearchBooks.php:81)
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CBaseController.php(95): ReportController->renderInternal()
+#1 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#2 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#3 K:\home\library.local\www\protected\controllers\ReportController.php(96): ReportController->render()
+#4 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#5 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#7 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#8 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#9 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report/search
+in K:\home\library.local\www\protected\models\SearchBooks.php (81)
+in K:\home\library.local\www\protected\views\report\report_search.php (12)
+in K:\home\library.local\www\protected\controllers\ReportController.php (96)
+2014/08/06 16:47:35 [error] [php] Undefined index: search (K:\home\library.local\www\protected\models\SearchBooks.php:81)
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CBaseController.php(95): ReportController->renderInternal()
+#1 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#2 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#3 K:\home\library.local\www\protected\controllers\ReportController.php(96): ReportController->render()
+#4 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#5 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#7 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#8 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#9 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report/search
+in K:\home\library.local\www\protected\models\SearchBooks.php (81)
+in K:\home\library.local\www\protected\views\report\report_search.php (12)
+in K:\home\library.local\www\protected\controllers\ReportController.php (96)
+2014/08/06 16:47:59 [error] [php] Undefined index: search (K:\home\library.local\www\protected\models\SearchBooks.php:81)
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CBaseController.php(95): ReportController->renderInternal()
+#1 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#2 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#3 K:\home\library.local\www\protected\controllers\ReportController.php(96): ReportController->render()
+#4 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#5 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#7 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#8 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#9 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report/search
+in K:\home\library.local\www\protected\models\SearchBooks.php (81)
+in K:\home\library.local\www\protected\views\report\report_search.php (12)
+in K:\home\library.local\www\protected\controllers\ReportController.php (96)
+2014/08/06 16:48:57 [error] [php] Undefined index: search (K:\home\library.local\www\protected\models\SearchBooks.php:81)
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CBaseController.php(95): ReportController->renderInternal()
+#1 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#2 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#3 K:\home\library.local\www\protected\controllers\ReportController.php(96): ReportController->render()
+#4 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#5 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#7 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#8 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#9 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report/search
+in K:\home\library.local\www\protected\models\SearchBooks.php (81)
+in K:\home\library.local\www\protected\views\report\report_search.php (12)
+in K:\home\library.local\www\protected\controllers\ReportController.php (96)
+2014/08/06 16:49:10 [error] [php] Undefined index: search (K:\home\library.local\www\protected\models\SearchBooks.php:81)
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CBaseController.php(95): ReportController->renderInternal()
+#1 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#2 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#3 K:\home\library.local\www\protected\controllers\ReportController.php(96): ReportController->render()
+#4 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#5 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#7 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#8 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#9 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report/search
+in K:\home\library.local\www\protected\models\SearchBooks.php (81)
+in K:\home\library.local\www\protected\views\report\report_search.php (12)
+in K:\home\library.local\www\protected\controllers\ReportController.php (96)
+2014/08/06 16:50:38 [error] [exception.CDbException] exception 'CDbException' with message 'The relation "authors" in active record class "SearchBooks" is specified with an incomplete foreign key. The foreign key must consist of columns referencing both joining tables.' in K:\home\library.local\yii\framework\db\ar\CActiveFinder.php:1214
+Stack trace:
+#0 K:\home\library.local\yii\framework\db\ar\CActiveFinder.php(1043): CJoinElement->joinManyMany(Object(CMysqlTableSchema), Array, Object(CJoinElement))
+#1 K:\home\library.local\yii\framework\db\ar\CActiveFinder.php(1317): CJoinElement->getJoinCondition()
+#2 K:\home\library.local\yii\framework\db\ar\CActiveFinder.php(795): CJoinQuery->join(Object(CJoinElement))
+#3 K:\home\library.local\yii\framework\db\ar\CActiveFinder.php(733): CJoinElement->buildQuery(Object(CJoinQuery))
+#4 K:\home\library.local\yii\framework\db\ar\CActiveFinder.php(151): CJoinElement->count(Object(CDbCriteria))
+#5 K:\home\library.local\yii\framework\db\ar\CActiveRecord.php(1608): CActiveFinder->count(Object(CDbCriteria))
+#6 K:\home\library.local\yii\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#7 K:\home\library.local\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#8 K:\home\library.local\yii\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#9 K:\home\library.local\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#10 K:\home\library.local\yii\framework\zii\widgets\CBaseListView.php(125): CDataProvider->getData()
+#11 K:\home\library.local\yii\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#12 K:\home\library.local\yii\framework\web\CBaseController.php(147): CGridView->init()
+#13 K:\home\library.local\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#14 K:\home\library.local\www\protected\views\report\report_search.php(22): CBaseController->widget('zii.widgets.gri...', Array)
+#15 K:\home\library.local\yii\framework\web\CBaseController.php(126): require('K:\home\library...')
+#16 K:\home\library.local\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('K:\home\library...', Array, true)
+#17 K:\home\library.local\yii\framework\web\CController.php(869): CBaseController->renderFile('K:\home\library...', Array, true)
+#18 K:\home\library.local\yii\framework\web\CController.php(782): CController->renderPartial('report_search', Array, true)
+#19 K:\home\library.local\www\protected\controllers\ReportController.php(96): CController->render('report_search', Array)
+#20 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#21 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#22 K:\home\library.local\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#23 K:\home\library.local\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 K:\home\library.local\yii\framework\web\CWebApplication.php(282): CController->run('search')
+#25 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('report/search')
+#26 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#27 K:\home\library.local\www\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/index.php?r=report/search
+HTTP_REFERER=http://www.library.local/index.php?r=report/reportAuthors
+---
+2014/08/06 16:52:15 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'sa'. The SQL statement executed was: SELECT COUNT(*) FROM `search_books` `sa` INNER JOIN book_author as ba ON ba.book_id = sb.id INNER JOIN search_author as sa ON sa.id = ba.author_id WHERE MATCH(sb.name,sa.name) AGAINST (:searchText IN BOOLEAN MODE) >0.
+in K:\home\library.local\www\protected\views\report\report_search.php (22)
+in K:\home\library.local\www\protected\controllers\ReportController.php (96)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 16:52:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1066 Not unique table/alias: 'sa'. The SQL statement executed was: SELECT COUNT(*) FROM `search_books` `sa` INNER JOIN book_author as ba ON ba.book_id = sb.id INNER JOIN search_author as sa ON sa.id = ba.author_id WHERE MATCH(sb.name,sa.name) AGAINST (:searchText IN BOOLEAN MODE) >0' in K:\home\library.local\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 K:\home\library.local\yii\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 K:\home\library.local\yii\framework\db\ar\CActiveRecord.php(1604): CDbCommand->queryScalar()
+#2 K:\home\library.local\yii\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#3 K:\home\library.local\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#4 K:\home\library.local\yii\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#5 K:\home\library.local\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#6 K:\home\library.local\yii\framework\zii\widgets\CBaseListView.php(125): CDataProvider->getData()
+#7 K:\home\library.local\yii\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#8 K:\home\library.local\yii\framework\web\CBaseController.php(147): CGridView->init()
+#9 K:\home\library.local\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 K:\home\library.local\www\protected\views\report\report_search.php(22): CBaseController->widget('zii.widgets.gri...', Array)
+#11 K:\home\library.local\yii\framework\web\CBaseController.php(126): require('K:\home\library...')
+#12 K:\home\library.local\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('K:\home\library...', Array, true)
+#13 K:\home\library.local\yii\framework\web\CController.php(869): CBaseController->renderFile('K:\home\library...', Array, true)
+#14 K:\home\library.local\yii\framework\web\CController.php(782): CController->renderPartial('report_search', Array, true)
+#15 K:\home\library.local\www\protected\controllers\ReportController.php(96): CController->render('report_search', Array)
+#16 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#17 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 K:\home\library.local\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 K:\home\library.local\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 K:\home\library.local\yii\framework\web\CWebApplication.php(282): CController->run('search')
+#21 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('report/search')
+#22 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#23 K:\home\library.local\www\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?r=report/search
+HTTP_REFERER=http://www.library.local/index.php?r=report/reportAuthors
+---
+2014/08/06 16:52:31 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.id' in 'field list'. The SQL statement executed was: SELECT t.id, t.name, authors.name FROM `search_books` `sb` INNER JOIN book_author as ba ON ba.book_id = sb.id INNER JOIN search_author as sa ON sa.id = ba.author_id WHERE MATCH(sb.name,sa.name) AGAINST (:searchText IN BOOLEAN MODE) >0 ORDER BY MATCH(sb.name,sa.name) AGAINST (:searchText IN BOOLEAN MODE) DESC LIMIT 10.
+in K:\home\library.local\www\protected\views\report\report_search.php (22)
+in K:\home\library.local\www\protected\controllers\ReportController.php (96)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 16:52:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.id' in 'field list'. The SQL statement executed was: SELECT t.id, t.name, authors.name FROM `search_books` `sb` INNER JOIN book_author as ba ON ba.book_id = sb.id INNER JOIN search_author as sa ON sa.id = ba.author_id WHERE MATCH(sb.name,sa.name) AGAINST (:searchText IN BOOLEAN MODE) >0 ORDER BY MATCH(sb.name,sa.name) AGAINST (:searchText IN BOOLEAN MODE) DESC LIMIT 10' in K:\home\library.local\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 K:\home\library.local\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 K:\home\library.local\yii\framework\db\ar\CActiveRecord.php(1354): CDbCommand->queryAll()
+#2 K:\home\library.local\yii\framework\db\ar\CActiveRecord.php(1473): CActiveRecord->query(Object(CDbCriteria), true)
+#3 K:\home\library.local\yii\framework\web\CActiveDataProvider.php(199): CActiveRecord->findAll(Object(CDbCriteria))
+#4 K:\home\library.local\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#5 K:\home\library.local\yii\framework\zii\widgets\CBaseListView.php(125): CDataProvider->getData()
+#6 K:\home\library.local\yii\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#7 K:\home\library.local\yii\framework\web\CBaseController.php(147): CGridView->init()
+#8 K:\home\library.local\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#9 K:\home\library.local\www\protected\views\report\report_search.php(22): CBaseController->widget('zii.widgets.gri...', Array)
+#10 K:\home\library.local\yii\framework\web\CBaseController.php(126): require('K:\home\library...')
+#11 K:\home\library.local\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('K:\home\library...', Array, true)
+#12 K:\home\library.local\yii\framework\web\CController.php(869): CBaseController->renderFile('K:\home\library...', Array, true)
+#13 K:\home\library.local\yii\framework\web\CController.php(782): CController->renderPartial('report_search', Array, true)
+#14 K:\home\library.local\www\protected\controllers\ReportController.php(96): CController->render('report_search', Array)
+#15 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#16 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 K:\home\library.local\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 K:\home\library.local\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 K:\home\library.local\yii\framework\web\CWebApplication.php(282): CController->run('search')
+#20 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('report/search')
+#21 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#22 K:\home\library.local\www\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/index.php?r=report/search
+HTTP_REFERER=http://www.library.local/index.php?r=report/reportAuthors
+---
+2014/08/06 16:53:04 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT COUNT(*) FROM `search_books` `sb` INNER JOIN book_author as ba ON ba.book_id = sb.id INNER JOIN search_author as sa ON sa.id = ba.author_id WHERE MATCH(sb.name,sa.name) AGAINST (:searchText IN BOOLEAN MODE) >0.
+in K:\home\library.local\www\protected\views\report\report_search.php (22)
+in K:\home\library.local\www\protected\controllers\ReportController.php (96)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 16:53:04 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT COUNT(*) FROM `search_books` `sb` INNER JOIN book_author as ba ON ba.book_id = sb.id INNER JOIN search_author as sa ON sa.id = ba.author_id WHERE MATCH(sb.name,sa.name) AGAINST (:searchText IN BOOLEAN MODE) >0' in K:\home\library.local\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 K:\home\library.local\yii\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 K:\home\library.local\yii\framework\db\ar\CActiveRecord.php(1604): CDbCommand->queryScalar()
+#2 K:\home\library.local\yii\framework\web\CActiveDataProvider.php(228): CActiveRecord->count(Object(CDbCriteria))
+#3 K:\home\library.local\yii\framework\web\CDataProvider.php(224): CActiveDataProvider->calculateTotalItemCount()
+#4 K:\home\library.local\yii\framework\web\CActiveDataProvider.php(178): CDataProvider->getTotalItemCount()
+#5 K:\home\library.local\yii\framework\web\CDataProvider.php(168): CActiveDataProvider->fetchData()
+#6 K:\home\library.local\yii\framework\zii\widgets\CBaseListView.php(125): CDataProvider->getData()
+#7 K:\home\library.local\yii\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#8 K:\home\library.local\yii\framework\web\CBaseController.php(147): CGridView->init()
+#9 K:\home\library.local\yii\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 K:\home\library.local\www\protected\views\report\report_search.php(22): CBaseController->widget('zii.widgets.gri...', Array)
+#11 K:\home\library.local\yii\framework\web\CBaseController.php(126): require('K:\home\library...')
+#12 K:\home\library.local\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('K:\home\library...', Array, true)
+#13 K:\home\library.local\yii\framework\web\CController.php(869): CBaseController->renderFile('K:\home\library...', Array, true)
+#14 K:\home\library.local\yii\framework\web\CController.php(782): CController->renderPartial('report_search', Array, true)
+#15 K:\home\library.local\www\protected\controllers\ReportController.php(96): CController->render('report_search', Array)
+#16 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#17 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 K:\home\library.local\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#19 K:\home\library.local\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 K:\home\library.local\yii\framework\web\CWebApplication.php(282): CController->run('search')
+#21 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('report/search')
+#22 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#23 K:\home\library.local\www\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?r=report/search
+HTTP_REFERER=http://www.library.local/index.php?r=report/reportAuthors
+---
+2014/08/06 18:21:27 [error] [exception.CException] exception 'CException' with message 'Property "ReportController.searchText" is not defined.' in K:\home\library.local\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 K:\home\library.local\www\protected\controllers\ReportController.php(107): CComponent->__get('searchText')
+#1 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#2 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 K:\home\library.local\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 K:\home\library.local\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 K:\home\library.local\yii\framework\web\CWebApplication.php(282): CController->run('search')
+#6 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('report/search')
+#7 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 K:\home\library.local\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php?r=report/search
+HTTP_REFERER=http://www.library.local/index.php?r=report/reportBooks
+---
+2014/08/06 18:38:08 [error] [php] Trying to get property of non-object (K:\home\library.local\www\protected\views\report\report_search.php:29)
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#1 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#2 K:\home\library.local\www\protected\controllers\ReportController.php(114): ReportController->render()
+#3 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#4 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#6 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#7 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#8 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report%2Fsearch&searchText=%09%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0+2%09&yt0=asfasd
+in K:\home\library.local\www\protected\views\report\report_search.php (29)
+in K:\home\library.local\www\protected\controllers\ReportController.php (114)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 18:38:55 [error] [php] Invalid argument supplied for foreach() (K:\home\library.local\yii\framework\db\ar\CActiveFinder.php:469)
+Stack trace:
+#0 K:\home\library.local\yii\framework\db\ar\CActiveRecord.php(143): SearchBooks->getRelated()
+#1 K:\home\library.local\www\protected\views\report\report_search.php(29): SearchBooks->__get()
+#2 K:\home\library.local\yii\framework\web\CBaseController.php(126): require()
+#3 K:\home\library.local\yii\framework\web\CBaseController.php(95): ReportController->renderInternal()
+#4 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#5 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#6 K:\home\library.local\www\protected\controllers\ReportController.php(114): ReportController->render()
+#7 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#8 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#10 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#11 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#12 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report%2Fsearch&searchText=%09%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0+2%09&yt0=asfasd
+in K:\home\library.local\www\protected\views\report\report_search.php (29)
+in K:\home\library.local\www\protected\controllers\ReportController.php (114)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 18:39:10 [error] [php] Invalid argument supplied for foreach() (K:\home\library.local\yii\framework\db\ar\CActiveFinder.php:469)
+Stack trace:
+#0 K:\home\library.local\yii\framework\db\ar\CActiveRecord.php(143): SearchBooks->getRelated()
+#1 K:\home\library.local\www\protected\views\report\report_search.php(29): SearchBooks->__get()
+#2 K:\home\library.local\yii\framework\web\CBaseController.php(126): require()
+#3 K:\home\library.local\yii\framework\web\CBaseController.php(95): ReportController->renderInternal()
+#4 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#5 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#6 K:\home\library.local\www\protected\controllers\ReportController.php(114): ReportController->render()
+#7 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#8 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#10 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#11 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#12 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report%2Fsearch&searchText=%09%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0+2%09&yt0=asfasd
+in K:\home\library.local\www\protected\views\report\report_search.php (29)
+in K:\home\library.local\www\protected\controllers\ReportController.php (114)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 18:39:48 [error] [php] Invalid argument supplied for foreach() (K:\home\library.local\yii\framework\db\ar\CActiveFinder.php:469)
+Stack trace:
+#0 K:\home\library.local\yii\framework\db\ar\CActiveRecord.php(143): SearchBooks->getRelated()
+#1 K:\home\library.local\www\protected\views\report\report_search.php(29): SearchBooks->__get()
+#2 K:\home\library.local\yii\framework\web\CBaseController.php(126): require()
+#3 K:\home\library.local\yii\framework\web\CBaseController.php(95): ReportController->renderInternal()
+#4 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#5 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#6 K:\home\library.local\www\protected\controllers\ReportController.php(114): ReportController->render()
+#7 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#8 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#10 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#11 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#12 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report%2Fsearch&searchText=%09%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0+2%09&yt0=asfasd
+in K:\home\library.local\www\protected\views\report\report_search.php (29)
+in K:\home\library.local\www\protected\controllers\ReportController.php (114)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 18:41:15 [error] [php] Invalid argument supplied for foreach() (K:\home\library.local\yii\framework\db\ar\CActiveFinder.php:469)
+Stack trace:
+#0 K:\home\library.local\yii\framework\db\ar\CActiveRecord.php(143): SearchBooks->getRelated()
+#1 K:\home\library.local\www\protected\views\report\report_search.php(28): SearchBooks->__get()
+#2 K:\home\library.local\yii\framework\web\CBaseController.php(126): require()
+#3 K:\home\library.local\yii\framework\web\CBaseController.php(95): ReportController->renderInternal()
+#4 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#5 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#6 K:\home\library.local\www\protected\controllers\ReportController.php(114): ReportController->render()
+#7 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#8 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#10 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#11 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#12 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report%2Fsearch&searchText=%09%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0+2%09&yt0=asfasd
+in K:\home\library.local\www\protected\views\report\report_search.php (28)
+in K:\home\library.local\www\protected\controllers\ReportController.php (114)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 18:41:43 [error] [php] Invalid argument supplied for foreach() (K:\home\library.local\yii\framework\db\ar\CActiveFinder.php:469)
+Stack trace:
+#0 K:\home\library.local\yii\framework\db\ar\CActiveRecord.php(143): SearchBooks->getRelated()
+#1 K:\home\library.local\www\protected\views\report\report_search.php(28): SearchBooks->__get()
+#2 K:\home\library.local\yii\framework\web\CBaseController.php(126): require()
+#3 K:\home\library.local\yii\framework\web\CBaseController.php(95): ReportController->renderInternal()
+#4 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#5 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#6 K:\home\library.local\www\protected\controllers\ReportController.php(114): ReportController->render()
+#7 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#8 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#10 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#11 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#12 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report%2Fsearch&searchText=%09%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0+2%09&yt0=asfasd
+in K:\home\library.local\www\protected\views\report\report_search.php (28)
+in K:\home\library.local\www\protected\controllers\ReportController.php (114)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 18:42:13 [error] [exception.CDbException] exception 'CDbException' with message 'The relation "authors" in active record class "SearchBooks" is specified with an incomplete foreign key. The foreign key must consist of columns referencing both joining tables.' in K:\home\library.local\yii\framework\db\ar\CActiveFinder.php:1214
+Stack trace:
+#0 K:\home\library.local\yii\framework\db\ar\CActiveFinder.php(1043): CJoinElement->joinManyMany(Object(CMysqlTableSchema), Array, Object(CJoinElement))
+#1 K:\home\library.local\yii\framework\db\ar\CActiveFinder.php(1317): CJoinElement->getJoinCondition()
+#2 K:\home\library.local\yii\framework\db\ar\CActiveFinder.php(795): CJoinQuery->join(Object(CJoinElement))
+#3 K:\home\library.local\yii\framework\db\ar\CActiveFinder.php(438): CJoinElement->buildQuery(Object(CJoinQuery))
+#4 K:\home\library.local\yii\framework\db\ar\CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#5 K:\home\library.local\yii\framework\db\ar\CActiveRecord.php(1359): CActiveFinder->query(Object(CDbCriteria), true)
+#6 K:\home\library.local\yii\framework\db\ar\CActiveRecord.php(1473): CActiveRecord->query(Object(CDbCriteria), true)
+#7 K:\home\library.local\www\protected\controllers\ReportController.php(111): CActiveRecord->findAll(Object(CDbCriteria))
+#8 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#9 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 K:\home\library.local\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 K:\home\library.local\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 K:\home\library.local\yii\framework\web\CWebApplication.php(282): CController->run('search')
+#13 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('report/search')
+#14 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 K:\home\library.local\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=report%2Fsearch&searchText=%09%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0+2%09&yt0=asfasd
+HTTP_REFERER=http://www.library.local/index.php?r=report/search
+---
+2014/08/06 18:51:45 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "authors" is not defined in active record class "SearchBooks".' in K:\home\library.local\yii\framework\db\ar\CActiveFinder.php:226
+Stack trace:
+#0 K:\home\library.local\yii\framework\db\ar\CActiveFinder.php(299): CActiveFinder->buildJoinTree(Object(CJoinElement), 'authors')
+#1 K:\home\library.local\yii\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 K:\home\library.local\yii\framework\db\ar\CActiveRecord.php(912): CActiveFinder->__construct(Object(SearchBooks), Array)
+#3 K:\home\library.local\yii\framework\db\ar\CActiveRecord.php(1358): CActiveRecord->getActiveFinder(Array)
+#4 K:\home\library.local\yii\framework\db\ar\CActiveRecord.php(1473): CActiveRecord->query(Object(CDbCriteria), true)
+#5 K:\home\library.local\www\protected\models\SearchBooks.php(102): CActiveRecord->findAll(Object(CDbCriteria))
+#6 K:\home\library.local\www\protected\controllers\ReportController.php(111): SearchBooks::searchReport('??????????? 2?')
+#7 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#8 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 K:\home\library.local\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 K:\home\library.local\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 K:\home\library.local\yii\framework\web\CWebApplication.php(282): CController->run('search')
+#12 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('report/search')
+#13 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 K:\home\library.local\www\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=report%2Fsearch&searchText=%09%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0+2%09&yt0=asfasd
+HTTP_REFERER=http://www.library.local/index.php?r=report/search
+---
+2014/08/06 18:51:49 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'book_name, sa.name as author_name FROM `search_books` `sb` INNER JOIN book_autho' at line 1. The SQL statement executed was: SELECT sb.id, sb.name sa book_name, sa.name as author_name FROM `search_books` `sb` INNER JOIN book_author as ba ON ba.book_id = sb.id INNER JOIN search_author as sa ON sa.id = ba.author_id WHERE MATCH(sb.name,sa.name) AGAINST (:searchText IN BOOLEAN MODE) >0 ORDER BY MATCH(sb.name,sa.name) AGAINST (:searchText IN BOOLEAN MODE) DESC LIMIT 10.
+in K:\home\library.local\www\protected\models\SearchBooks.php (101)
+in K:\home\library.local\www\protected\controllers\ReportController.php (111)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 18:51:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'book_name, sa.name as author_name FROM `search_books` `sb` INNER JOIN book_autho' at line 1. The SQL statement executed was: SELECT sb.id, sb.name sa book_name, sa.name as author_name FROM `search_books` `sb` INNER JOIN book_author as ba ON ba.book_id = sb.id INNER JOIN search_author as sa ON sa.id = ba.author_id WHERE MATCH(sb.name,sa.name) AGAINST (:searchText IN BOOLEAN MODE) >0 ORDER BY MATCH(sb.name,sa.name) AGAINST (:searchText IN BOOLEAN MODE) DESC LIMIT 10' in K:\home\library.local\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 K:\home\library.local\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 K:\home\library.local\yii\framework\db\ar\CActiveRecord.php(1354): CDbCommand->queryAll()
+#2 K:\home\library.local\yii\framework\db\ar\CActiveRecord.php(1473): CActiveRecord->query(Object(CDbCriteria), true)
+#3 K:\home\library.local\www\protected\models\SearchBooks.php(101): CActiveRecord->findAll(Object(CDbCriteria))
+#4 K:\home\library.local\www\protected\controllers\ReportController.php(111): SearchBooks::searchReport('??????????? 2?')
+#5 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#6 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 K:\home\library.local\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 K:\home\library.local\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 K:\home\library.local\yii\framework\web\CWebApplication.php(282): CController->run('search')
+#10 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('report/search')
+#11 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#12 K:\home\library.local\www\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php?r=report%2Fsearch&searchText=%09%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0+2%09&yt0=asfasd
+HTTP_REFERER=http://www.library.local/index.php?r=report/search
+---
+2014/08/06 18:52:36 [error] [exception.CException] exception 'CException' with message 'Property "SearchBooks.book_name" is not defined.' in K:\home\library.local\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 K:\home\library.local\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('book_name')
+#1 K:\home\library.local\yii\framework\base\CModel.php(596): CActiveRecord->__get('book_name')
+#2 K:\home\library.local\www\protected\models\SearchBooks.php(106): CModel->offsetGet('book_name')
+#3 K:\home\library.local\www\protected\controllers\ReportController.php(111): SearchBooks::searchReport('??????????? 2?')
+#4 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#5 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 K:\home\library.local\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 K:\home\library.local\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 K:\home\library.local\yii\framework\web\CWebApplication.php(282): CController->run('search')
+#9 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('report/search')
+#10 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 K:\home\library.local\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=report%2Fsearch&searchText=%09%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0+2%09&yt0=asfasd
+HTTP_REFERER=http://www.library.local/index.php?r=report/search
+---
+2014/08/06 18:53:02 [error] [exception.CException] exception 'CException' with message 'Property "SearchBooks.book_name" is not defined.' in K:\home\library.local\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 K:\home\library.local\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('book_name')
+#1 K:\home\library.local\yii\framework\base\CModel.php(596): CActiveRecord->__get('book_name')
+#2 K:\home\library.local\www\protected\models\SearchBooks.php(106): CModel->offsetGet('book_name')
+#3 K:\home\library.local\www\protected\controllers\ReportController.php(111): SearchBooks::searchReport('??????????? 2?')
+#4 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#5 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 K:\home\library.local\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 K:\home\library.local\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 K:\home\library.local\yii\framework\web\CWebApplication.php(282): CController->run('search')
+#9 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('report/search')
+#10 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 K:\home\library.local\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=report%2Fsearch&searchText=%09%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0+2%09&yt0=asfasd
+HTTP_REFERER=http://www.library.local/index.php?r=report/search
+---
+2014/08/06 18:53:37 [error] [php] Trying to get property of non-object (K:\home\library.local\www\protected\views\report\report_search.php:20)
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#1 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#2 K:\home\library.local\www\protected\controllers\ReportController.php(115): ReportController->render()
+#3 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#4 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#6 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#7 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#8 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report%2Fsearch&searchText=%09%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0+2%09&yt0=asfasd
+in K:\home\library.local\www\protected\views\report\report_search.php (20)
+in K:\home\library.local\www\protected\controllers\ReportController.php (115)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 18:54:35 [error] [php] Trying to get property of non-object (K:\home\library.local\www\protected\views\report\report_search.php:20)
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#1 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#2 K:\home\library.local\www\protected\controllers\ReportController.php(115): ReportController->render()
+#3 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#4 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#6 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#7 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#8 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report%2Fsearch&searchText=%09%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0+2%09&yt0=asfasd
+in K:\home\library.local\www\protected\views\report\report_search.php (20)
+in K:\home\library.local\www\protected\controllers\ReportController.php (115)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 18:56:49 [error] [php] Trying to get property of non-object (K:\home\library.local\www\protected\views\report\report_search.php:21)
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#1 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#2 K:\home\library.local\www\protected\controllers\ReportController.php(115): ReportController->render()
+#3 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#4 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#6 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#7 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#8 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report%2Fsearch&searchText=%09%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0+2%09&yt0=asfasd
+in K:\home\library.local\www\protected\views\report\report_search.php (21)
+in K:\home\library.local\www\protected\controllers\ReportController.php (115)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 19:03:19 [error] [php] Undefined variable: book (K:\home\library.local\www\protected\views\report\report_search.php:24)
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#1 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#2 K:\home\library.local\www\protected\controllers\ReportController.php(115): ReportController->render()
+#3 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#4 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#6 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#7 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#8 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report%2Fsearch&searchText=%09%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0+2%09&yt0=asfasd
+in K:\home\library.local\www\protected\views\report\report_search.php (24)
+in K:\home\library.local\www\protected\controllers\ReportController.php (115)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 19:03:21 [error] [php] Undefined variable: book (K:\home\library.local\www\protected\views\report\report_search.php:24)
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#1 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#2 K:\home\library.local\www\protected\controllers\ReportController.php(115): ReportController->render()
+#3 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#4 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#6 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#7 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#8 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report%2Fsearch&searchText=%09%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0+2%09&yt0=asfasd
+in K:\home\library.local\www\protected\views\report\report_search.php (24)
+in K:\home\library.local\www\protected\controllers\ReportController.php (115)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 19:05:18 [error] [php] Invalid argument supplied for foreach() (K:\home\library.local\www\protected\views\report\report_search.php:16)
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#1 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#2 K:\home\library.local\www\protected\controllers\ReportController.php(115): ReportController->render()
+#3 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#4 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#6 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#7 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#8 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report%2Fsearch&searchText=yii&yt0=asfasd
+in K:\home\library.local\www\protected\views\report\report_search.php (16)
+in K:\home\library.local\www\protected\controllers\ReportController.php (115)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 19:05:39 [error] [php] Invalid argument supplied for foreach() (K:\home\library.local\www\protected\views\report\report_search.php:16)
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#1 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#2 K:\home\library.local\www\protected\controllers\ReportController.php(115): ReportController->render()
+#3 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#4 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#6 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#7 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#8 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report%2Fsearch&searchText=yii&yt0=asfasd
+in K:\home\library.local\www\protected\views\report\report_search.php (16)
+in K:\home\library.local\www\protected\controllers\ReportController.php (115)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 19:30:55 [error] [php] Undefined variable: book_name (K:\home\library.local\www\protected\views\report\report_search.php:25)
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#1 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#2 K:\home\library.local\www\protected\controllers\ReportController.php(98): ReportController->render()
+#3 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#4 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#6 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#7 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#8 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report%2Fsearch&searchText=%D0%BF%D1%83%D1%88&yt0=search
+in K:\home\library.local\www\protected\views\report\report_search.php (25)
+in K:\home\library.local\www\protected\controllers\ReportController.php (98)
+in K:\home\library.local\www\index.php (13)
+2014/08/06 19:30:59 [error] [php] Undefined variable: book_name (K:\home\library.local\www\protected\views\report\report_search.php:25)
+Stack trace:
+#0 K:\home\library.local\yii\framework\web\CController.php(869): ReportController->renderFile()
+#1 K:\home\library.local\yii\framework\web\CController.php(782): ReportController->renderPartial()
+#2 K:\home\library.local\www\protected\controllers\ReportController.php(98): ReportController->render()
+#3 K:\home\library.local\yii\framework\web\actions\CInlineAction.php(49): ReportController->actionSearch()
+#4 K:\home\library.local\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 K:\home\library.local\yii\framework\web\CController.php(286): ReportController->runAction()
+#6 K:\home\library.local\yii\framework\web\CController.php(265): ReportController->runActionWithFilters()
+#7 K:\home\library.local\yii\framework\web\CWebApplication.php(282): ReportController->run()
+#8 K:\home\library.local\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 K:\home\library.local\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 K:\home\library.local\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=report%2Fsearch&searchText=%D0%BF%D1%83%D1%88&yt0=search
+in K:\home\library.local\www\protected\views\report\report_search.php (25)
+in K:\home\library.local\www\protected\controllers\ReportController.php (98)
+in K:\home\library.local\www\index.php (13)
