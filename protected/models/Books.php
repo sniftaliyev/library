@@ -16,6 +16,7 @@
 class Books extends CActiveRecord
 {
 	public $authorsName;
+	public $readerIds = array();
 	/**
 	 * @return string the associated database table name
 	 */
@@ -34,7 +35,7 @@ class Books extends CActiveRecord
 		return array(
 			array('name, authorsName', 'required'),
 			array('name', 'length', 'max'=>255),
-			array('create_time', 'safe'),
+			array('readerIds', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, name, update_time, create_time', 'safe', 'on'=>'search'),
@@ -61,6 +62,26 @@ class Books extends CActiveRecord
 		if ($this->isNewRecord){
 			$this->create_time = new CDbExpression('NOW()');
 		}
+		$authorList = str_replace('||', ' ', $this->authorsName);
+		$authorList = CHtml::listData(
+			SearchAuthor::model()->findAll('MATCH(name) AGAINST (:text IN BOOLEAN MODE) >0', array(':text'=>$authorList)),
+			'id', 'id'
+		);
+		$this->attachBehavior('ManyToManyRelationBehavior', array(
+			'class' => 'ext.ManyToManyRelationBehavior',
+			'modelNameRelation' => 'BookAuthor', // Model for relation
+			'fieldNameModelCurrent' =>  'book_id', // field Name current Model
+			'fieldNameModelRelation' => 'author_id',// filed Name reltion Model
+			'relationList' => $authorList,    //array id record from Relation Model
+		));
+
+		$this->attachBehavior('ManyToManyRelationBehavior', array(
+			'class' => 'ext.ManyToManyRelationBehavior',
+			'modelNameRelation' => 'BookReader', // Model for relation
+			'fieldNameModelCurrent' =>  'book_id', // field Name current Model
+			'fieldNameModelRelation' => 'reader_id',// filed Name reltion Model
+			'relationList' => $this->readerIds,    //array id record from Relation Model
+		));
 		return parent::beforeSave();
 	}
 
@@ -73,6 +94,7 @@ class Books extends CActiveRecord
 			'id' => 'ID',
 			'name' => 'Name',
 			'authorsName' => 'Authors',
+			'readerIds' => 'Readers',
 			'update_time' => 'Update Time',
 			'create_time' => 'Create Time',
 		);
@@ -105,6 +127,18 @@ class Books extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
+//	public function a
+
+//	public function getReaderIds(){
+//		$readers = array();
+//		if($this->readers){
+//			foreach ($this->readers as $reader) {
+//				$readers[]=$reader->id;
+//			}
+//		}
+//		return $readers ;
+//	}
 
 	/**
 	 * Returns the static model of the specified AR class.

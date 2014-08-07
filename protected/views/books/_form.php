@@ -55,6 +55,19 @@
 		<?php echo $form->error($model,'authorsName'); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->labelEx($model,'readerIds'); ?>
+		<?php
+		if($model->readers){
+			foreach($model->readers as $reader)
+				$model->readerIds[] = $reader->id;
+		}
+		echo $form->dropDownList($model, 'readerIds', CHtml::listData(Readers::model()->findAll(), 'id', 'name'),
+			array('multiple' => 'multiple', 'size' => '10' )
+		); ?>
+		<?php echo $form->error($model,'readerIds'); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>

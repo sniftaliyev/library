@@ -62,18 +62,6 @@ class BooksController extends Controller
 		if(isset($_POST['Books']))
 		{
 			$model->attributes=$_POST['Books'];
-			$authorList = str_replace('||', ' ', $_POST['Books']['authorsName']);
-			$authorList = CHtml::listData(
-				SearchAuthor::model()->findAll('MATCH(name) AGAINST (:text IN BOOLEAN MODE) >0', array(':text'=>$authorList)),
-				'id', 'id'
-			);
-			$model->attachBehavior('ManyToManyRelationBehavior', array(
-				'class' => 'ext.ManyToManyRelationBehavior',
-				'modelNameRelation' => 'BookAuthor', // Model for relation
-				'fieldNameModelCurrent' =>  'book_id', // field Name current Model
-				'fieldNameModelRelation' => 'author_id',// filed Name reltion Model
-				'relationList' => $authorList,    //array id record from Relation Model
-			));
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -98,18 +86,6 @@ class BooksController extends Controller
 		if(isset($_POST['Books']))
 		{
 			$model->attributes=$_POST['Books'];
-			$authorList = str_replace('||', ' ', $_POST['Books']['authorsName']);
-			$authorList = CHtml::listData(
-				SearchAuthor::model()->findAll('MATCH(name) AGAINST (:text IN BOOLEAN MODE) >0', array(':text'=>$authorList)),
-				'id', 'id'
-			);
-			$model->attachBehavior('ManyToManyRelationBehavior', array(
-				'class' => 'ext.ManyToManyRelationBehavior',
-				'modelNameRelation' => 'BookAuthor', // Model for relation
-				'fieldNameModelCurrent' =>  'book_id', // field Name current Model
-				'fieldNameModelRelation' => 'author_id',// filed Name reltion Model
-				'relationList' => $authorList,    //array id record from Relation Model
-			));
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
